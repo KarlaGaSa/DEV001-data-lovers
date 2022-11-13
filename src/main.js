@@ -24,7 +24,12 @@ function cardTemplate(img, num, name) {
   `;
     return pokemonHTML
 }
+// --- Botón regresar a Home
 
+const home = document.getElementById("home");
+home.addEventListener("click",() =>{
+    window.location.reload();  
+});
 
 /*const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");
@@ -58,6 +63,7 @@ const span = document.getElementsByClassName("close")[0];
     
 });*/
 
+// --- Boton Scroll ---
 const btn_scrolltop = document.getElementById("btn_scrolltop")
 btn_scrolltop.addEventListener('click', () => {
   window.scrollTo(0, 0)
@@ -88,25 +94,6 @@ prueba.addEventListener("click", () => {
         cardInfo.innerHTML += cardTemplate(nombre.img, nombre.num, nombre.name)
     });
 })
-
-/*// ---- Botón SCROLL ----
-const btn_scrolltop = document.getElementById("btn_scrolltop")
-btn_scrolltop.addEventListener('click', () => {
-    window.scrollTo(0, 0)
-})
-
-window.onscroll = () => {
-    add_btn_scrolltop()
-}
-
-const add_btn_scrolltop = () => {
-    if (window.scrollY < 300) {
-        btn_scrolltop.classList.remove("btn-scrolltop-on")
-    } else {
-        btn_scrolltop.classList.add("btn-scrolltop-on")
-
-    }
-}*/
 
 //Ordenar de A a la Z
 const ordenAZ = document.getElementById("A-Z");
