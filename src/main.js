@@ -5,47 +5,6 @@ import { searchFilter, ordenAZPokemon, ordenZAPokemon,filtroPorTipo  } from './d
 // ---- Constantes declaradas ----
 const infoPokemon = data.pokemon;
 const cardInfo = document.getElementById("cont-card");
-//let modal = document.getElementById('myModal');
-//let btn = getElementById("MyBtn");
-//let span = document.getElementsByClassName("close")[0];
-
-/* --- MODAL ---- 
-const detalles = (infoPokemon) => {
-
-  infoPokemon.forEach((persona) => {
-    modal.innerHTML += modalTemplate(persona.img, persona.num, persona.name)
-  
-  });
-
-  function modalTemplate(img, num, name) {
-
-    const modalHTML = `
-    <div class="cont.card" id=${num}>
-    <div class="card" id="card">
-    <img class="img" src=${img} </img><div>;
-    <p><class= "namepokemon">${name} </p>
-    <p><class= "numpokemon">${num}</p><br>
-    </div>
-    <button id="myBtn">Ver más</button>
-    </div>
-    </div>
-    `;
-
-  modal.click = function () {
-    modal.style.display = "block";
-    modalTemplate.innerHTML="";
-  }
-  span.onclick = function () {
-    modal.style.display = "none";
-  }
-  window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-  return modalHTML;
-}}*/
-
 
 // --- Mostrando tarjetas ---
 infoPokemon.forEach((persona) => {
@@ -58,11 +17,10 @@ function cardTemplate(img, num, name, type) {
   const pokemonHTML = `
   <div class="cont.card" id=${num}>
   <div class="card" id="card">
-  <img class="img" src=${img} </img><div> 
-  <p><class= "namepokemon">${name} </p>
-  <p><class= "numpokemon">${num}</p><br>
-  <p><class= "numpokemon">${type}</p><br>
-  </div>
+  <img class="img" src=${img}>
+  <p>${name} </p>
+  <p>${num}</p><br>
+  <p>${type}</p><br>
   </div>
   </div>
   `;
@@ -103,7 +61,7 @@ search.addEventListener("keyup", () => {
   cardInfo.innerHTML = " "
   busca.forEach((nombre) => {
 
-    cardInfo.innerHTML += cardTemplate(nombre.img, nombre.num, nombre.name)
+    cardInfo.innerHTML += cardTemplate(nombre.img, nombre.num, nombre.name, nombre.type)
   });
 })
 
@@ -137,7 +95,7 @@ ordenAZ.addEventListener("click", () => {
   //console.log(ordenada);
   cardInfo.innerHTML = " "
   ordenada.forEach((nombre) => {
-    cardInfo.innerHTML += cardTemplate(nombre.img, nombre.num, nombre.name)
+    cardInfo.innerHTML += cardTemplate(nombre.img, nombre.num, nombre.name, nombre.type)
   });
 })
 
@@ -149,6 +107,6 @@ ordenZA.addEventListener("click", () => {
   //console.log(ordenada);
   cardInfo.innerHTML = " "
   desordenada.forEach((nombre) => {
-    cardInfo.innerHTML += cardTemplate(nombre.img, nombre.num, nombre.name)
+    cardInfo.innerHTML += cardTemplate(nombre.img, nombre.num, nombre.name, nombre.type)
   });
 })
