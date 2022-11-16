@@ -15,58 +15,63 @@
   <div class="encabezadoPadre">
     <img src="imagenes/pokemon-go.jpg" id="logo">
     <img src="imagenes/pikachu.png" id="pikachu">
-    <div class="dropdown">
-      <button class="dropbtn">Ordenar</button>
-      <div class="dropdown-content">
-        <a id="A-Z">Ordenar de la A - Z</a>
-        <a id="Z-A">Ordenar de la Z - A</a>
+
+    <div class="botones" id="botones">
+      <input type="button" class="inicio" id="home" value="Home">
+
+      <div>
+        <label for="filtroTipo" id="tipo"> Type </label>
+        <select id="filtroTipo">
+          <option value="all">All</option>
+          <option value="bug">Bug</option>
+          <option value="dark">Dark</option>
+          <option value="dragon"> Dragon</option>
+          <option value="electric">Electric</option>
+          <option value="fairy">Fairy</option>
+          <option value="fighting">Fighting</option>
+          <option value="fire">Fire</option>
+          <option value="flying">Flying</option>
+          <option value="ghost">Ghost</option>
+          <option value="grass">Grass</option>
+          <option value="ground">Ground</option>
+          <option value="ice">Ice</option>
+          <option value="normal">Normal</option>
+          <option value="poison">Poison</option>
+          <option value="psychic">Psychic</option>
+          <option value="rock">Rock</option>
+          <option value="steel">Steel</option>
+          <option value="water"> Water</option>
+        </select>
       </div>
-      <input type=”button” class="inicio" id="home" placeholder="Home"></input>
-      
+
+      <div class="dropdown">
+        <button class="dropbtn">Ordenar</button>
+        <div class="dropdown-content">
+          <a id="A-Z">Ordenar de la A - Z</a>
+          <a id="Z-A">Ordenar de la Z - A</a>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="slogan"> <img src="imagenes/atrapalos2.png" id="sloganid">
-    
+      <div class="slogan"> <img src="imagenes/atrapalos2.png" id="sloganid">
+      </div>
 
   </div>
+  <article class="searcher">
+    <input type="search" id="search" placeholder="Search by name" autocomplete="off" spellcheck="false" />
+  </article>
+
 </header>
 
 
-  
+
 <body>
-  <!-- Trigger/Open The Modal -->
-<!--<button id="myBtn">Open Modal</button>-->
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
+  <!-- <div id="myModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
+  </div> 
 
-</div>
+</div>-->
 
-  <article class="searcher">
-    <input type="search" id="search" placeholder="Search by name" autocomplete="off" spellcheck="false" />
-   
-  </article>
- <!-- <button id="myBtn">Open Modal</button>
-
-   The Modal 
-  <div id="myModal" class="modal">-->
-  
-    <!-- Modal content 
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      
-    </div>
-  
-  </div>--->
-
-</div>
   <main>
     <div id="contenedorPadre">
       <div class="cont-card" id="cont-card"></div>
@@ -74,7 +79,7 @@
         <i class="fas fa-chevron-up"></i>
       </button>
     </div>
-   
+
   </main>
 
   <footer>

@@ -1,250 +1,298 @@
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: url(./imagenes/fondo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed
+  background: url(./imagenes/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed
 }
 
 .encabezadoPadre {
-    display: flex;
-    /*background: blue;*/
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  /*background: blue;*/
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
 }
 
 #logo {
-    width: 20%;
-    height: auto;
-    position: sticky;
-    align-content: center;
-    display: flex;
-    margin-left: 5%;
+  width: 20%;
+  height: auto;
+  position: sticky;
+  align-content: center;
+  display: flex;
+  margin-left: 5%;
 }
 
 #pikachu {
-    display: flex;
-    width: 15%;
-    height: auto;
-    margin-left: 5%;
-    padding: 0%;
+  display: flex;
+  width: 15%;
+  height: auto;
+  margin-left: 5%;
+  padding: 0%;
 }
 
-/* ---- Atrápalos ya ---- */
-#sloganid {
-    display: flex;
-    width: 40%;
-    display: block;
-    align-items: center;
-    margin: auto;
-    padding-top: 3%;
-}
-
-/* ---- Botón Ver Más --- */
-#myBtn {
-    display: block;
-    width: 100px;
-    height: 20px;
-    margin: auto;
-    /*para centrar el botón dentro de las tarjetas le di margin auto y lo comenté del html*/
-}
-
-/* ---- Buscador por nombre y su botón ---- */
-.searcher {
-    margin: 10px 10px 10px 20px;
+#botones {
+  display: flex;
 
 }
-
-#search {
-    width: 200px;
-    font-size: 15px;
-    border-radius: 0.4em;
-    border: solid 1px #337f7b;
-    background-color: #ffffff;
-    text-align: center;
-    padding: 5px;
-}
-
-
-/* ---- Espacio que contiene todas las tarjetas ---- */
-#contenedorPadre {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    margin:auto;
-    overflow: auto;
-    align-items: center;
-}
-
-#cont-card {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    margin:auto;
-    justify-content: center;
-}
-
-#card{
-    align-content: center;
-    border-radius: 20px;
-    background: url(./imagenes/pokemon-estrellas.png);
-    box-shadow: 5px 5px 10px #60d8e1;
-    margin: 50px;
-    text-align: center;
-    flex-wrap: wrap;
-    width: 170px;
-    height: 250px;
-    text-transform: capitalize;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    justify-content: center;
-    padding: 18px;
-}
-
-card:hover {
-    background-color:#ffffff;
-}
-
-/* ---- Scroll ---- */
-html {
-    scroll-behavior: smooth;
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    text-align: justify;
-  }
-  
-  .btn-scrolltop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 15px 20px;
-    background: rgb(0, 4, 255);
-    color: white;
-    border: 1px solid white;
-    border-radius: 100%;
-    cursor: pointer;
-    transform: translateY(100px);
-    transition: 0.3s;
-  }
-  
-  .btn-scrolltop-on {
-    transform: translateY(0);
-  }
-
-/* ---- Footer ----*/
-footer {
-    background-color: black;
-    color: #fff;
-    padding: 2% 2% 2% 2%;
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
-}
-
-/* barra de busqueda*/
-/* Dropdown Button */
-.dropbtn {
-    background-color: #1c7bce;
+#home{
+  background-color: rgb(0, 4, 255);
     color: white;
     padding: 13px;
     font-size: 13px;
     border-radius: 10px;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
     display: flex;
-    margin: 06% 10%;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 120px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 13px;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
-/*.general{
-    align-content: center;
-    border-radius: 20px;
-    background: url(./imagenes/pokemon-estrellas.png);
-    box-shadow: 5px 5px 10px #60d8e1;
-    margin: 50px;
-    text-align: center;
-    flex-wrap: wrap;
-    width: 170px;
-    height: 250px;
-    text-transform: capitalize;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    justify-content: center;
-    padding: 18px;  
+    width: 75px;
+    height: 45px;
+    margin: 3% 4%;
 }
-  
- /*Boton */
- #myBoton{
-    margin: 10px 10px 10px 20px;
-    width: 100px;
-    height: 20px;
-    font-size: 15px;
-    padding: 5px;
- }
+/*Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
+  z-index: 1;
+}
 
- /* The Modal (background) */
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color:rgb(52, 85, 186);
+}
+/* --- Buscador por tipo ---*/
+#tipo {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  margin: 10% 2%;
+}
+#filtroTipo{
+  justify-content: center;
+  display: flex;
+  margin: 10%;
+}
+
+.menu-container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0em 0em 2em 0em;
+}
+
+.all-pokemon {
+  font-family: 'Lato', sans-serif;
+  border: none;
+  outline: 0;
+  background-color: #84d89b;
+  border-radius: 0.4em;
+  padding: 0.3em 2em;
+  font-size: 1em;
+}
+
+.all-pokemon:hover {
+  background-color: #35867d;
+  color: #ffffff;
+  transition: background-color 0.5s ease-out;
+  outline: 0;
+}
+
+.menu-container div button {
+  padding: 1em 1em 0em 1em;
+}
+
+.menu-container select {
+  background-color: #ffffff;
+  padding: 0.2em;
+  width: 9em;
+  border-radius: 0.4em;
+  outline: 0;
+}
+
+.menu-container option {
+  font-family: 'Lato', sans-serif;
+}
+
+.menu-container label {
+  padding: 0em 0.5em;
+}
+
+/* ---- Atrápalos ya ---- */
+#sloganid {
+  display: flex;
+  width: 40%;
+  display: block;
+  align-items: center;
+  margin: auto;
+  padding-top: 3%;
+}
+/* ---- Buscador por nombre y su botón ---- */
+.searcher {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#search {
+  width: 200px;
+  font-size: 15px;
+  border-radius: 0.4em;
+  border: solid 3px rgb(0, 4, 255);
+  background-color: #ffffff;
+  text-align: center;
+  padding: 5px;
+}
+/* Botón Ordenas A-Z Z-A */
+.dropbtn {
+  display: flex;
+  background-color:rgb(0, 4, 255);
+  color: white;
+  padding: 13px;
+  font-size: 13px;
+  border-radius: 10px;
+  margin: 10% 10px 10px 15px;
+}
+
+/* ---- Espacio que contiene todas las tarjetas ---- */
+#contenedorPadre {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: auto;
+  align-items: center;
+}
+
+#cont-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+}
+
+#card {
+  align-content: center;
+  border-radius: 20px;
+  background: url(./imagenes/pokemon-estrellas.png);
+  box-shadow: 5px 5px 15px #60d8e1;
+  margin: 50px;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 170px;
+  height: 250px;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  justify-content: center;
+  padding: 18px;
+}
+
+/* ---- Scroll ---- */
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.btn-scrolltop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 20px;
+  background: rgb(0, 4, 255);
+  color: white;
+  border: 1px solid white;
+  border-radius: 100%;
+  cursor: pointer;
+  transform: translateY(100px);
+  transition: 0.3s;
+}
+
+.btn-scrolltop-on {
+  transform: translateY(0);
+}
+
+/* ---- Footer ----*/
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 2% 2% 2% 2%;
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+/*Boton Modal */
+
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
+
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto;
+  /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
+  /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -261,18 +309,7 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
- /*.grow{
-    transition: all .2s ease-in-out;
- }
- .grow:hover{
-    transform: scale(1.1);
- }
-  /* .inicio{
-    background-color: #1c7bce;
-    color: white;
-    padding: 13px;
-    font-size: 13px;
-    border-radius: 10px;
-    }*/
- 
- 
+
+* {
+  font-family: 'Lato', sans-serif;
+}

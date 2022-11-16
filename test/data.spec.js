@@ -30,6 +30,30 @@ describe('searchFilter', () => {
     ]
     expect(searchFilter(pruebaArray, "venusaur")).toEqual(resultado)
   });
+  
+  it('Deberia retornar un arreglos de los pokemon que inician con "ven"', () => {
+    const pruebaArray = [{
+    "num": "001",
+    "name": "bulbasaur"
+  },
+  {
+    "num": "002",
+    "name": "ivysaur"
+  },
+  {
+    "num": "003",
+    "name": "venusaur"
+  }
+  ]
+  const resultado = [
+    {
+      "num": "003",
+      "name": "venusaur"
+    }]
+    expect (searchFilter(pruebaArray, 'ven')).toEqual(resultado);
+  });
+  
+
 });
 
 //Test de ordenar A-Z

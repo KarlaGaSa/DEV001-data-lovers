@@ -36,3 +36,8 @@ export const ordenZAPokemon=(array)=>{
   })
 }
   
+export const filtroPorTipo =  (pokemon, ptype)=> {
+  const busquedaXTipo= pokemon.filter (x => 
+  x.type.includes(ptype));
+  return busquedaXTipo;
+  };
