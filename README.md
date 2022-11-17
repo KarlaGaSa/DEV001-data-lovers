@@ -31,6 +31,17 @@ Prototipo historia de usuario Nº1
 
 ![PrototipodeAlta](https://user-images.githubusercontent.com/105952350/202507961-d639633e-b414-408c-ad2e-e21da1d3a6de.png)
 
+Historia de usuario Nº 2
+Como usuario de la pagina, quiero poder buscar los pokemons por el nombre.
+![WhatsApp Image](https://user-images.githubusercontent.com/105952350/202508896-ad4354e2-6d83-4601-8389-ef622c1345fe.jpeg)
+
+Historia de usuario Nº 3
+Para facilitar mi busqueda y conocimiento de los pokemons me gustaria poder visualizarlos en orden alfabetico ascedente y descendente.
+
+Historia de usuario Nº 4
+Como usuaria de la pagina me gustaria poder filtrar los Pokemons por tipo
+![WhatsApp Imag AM](https://user-images.githubusercontent.com/105952350/202508965-bed3357a-c125-4ed7-bd9b-a41a0540be2b.jpeg)
+
 ## Tecnologìas utilizadas
 - Javascript
 - CSS
