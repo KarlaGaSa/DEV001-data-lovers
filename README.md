@@ -28,7 +28,8 @@ Tambien es altamente descriptiva con cada pokemon, brindando información detall
 Yo como nueva aspirante a maestra pokémon quiero primero conocer la imagen, nombre y número de los pokemones en una solo pantalla.
 
 Prototipo historia de usuario Nº1
-<img src= "imagenes/PrototipoHU1.png">
+
+![PrototipodeAlta](https://user-images.githubusercontent.com/105952350/202507961-d639633e-b414-408c-ad2e-e21da1d3a6de.png)
 
 ## Tecnologìas utilizadas
 - Javascript
