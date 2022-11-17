@@ -22,14 +22,15 @@ Todas las funcionalidades de la página estan dirigidas e inspiradas en las hist
 
 "Pokemon" posee un diseño sencillo, amable y responsivo que facilita la navegabilidad  para nuestros usuarios.
 Tambien es altamente descriptiva con cada pokemon, brindando información detallada.
+![PrototipodeAlta](https://user-images.githubusercontent.com/105952350/202509232-5b81e3d9-cdc5-4a9a-8fdd-cc33afe0de05.png)
 
 ## Historias de usuario
 #### Historia de usuario N1
 Yo como nueva aspirante a maestra pokémon quiero primero conocer la imagen, nombre y número de los pokemones en una solo pantalla.
 
 Prototipo historia de usuario Nº1
+![Prototipo HU1](https://user-images.githubusercontent.com/105952350/202509314-20dc8a22-80b9-4634-9470-49f38bebfa0e.png)
 
-![PrototipodeAlta](https://user-images.githubusercontent.com/105952350/202507961-d639633e-b414-408c-ad2e-e21da1d3a6de.png)
 
 Historia de usuario Nº 2
 Como usuario de la pagina, quiero poder buscar los pokemons por el nombre.
