@@ -32,9 +32,9 @@ function cardTemplate(img, num, name,myBtn) {
     show.classList.add('modal');
   });*/
     return pokemonHTML
+
+
 }
-
-
 
 // --- Botón regresar a Home
 
@@ -43,16 +43,7 @@ home.addEventListener("click", () => {
     window.location.reload();
 });
 
-/*const modal = document.getElementById("myModal");
-//const btn = document.getElementById("myBoton")
-const span = document.getElementsByClassName("close")[0];
 
-
-
-const btn = document.getElementById("myBoton");
-btn.addEventListener("click", () => {
-    verMas();
-});*/
 
 
 // --- Boton Scroll ---
@@ -110,45 +101,4 @@ ordenZA.addEventListener("click", () => {
         cardInfo.innerHTML += cardTemplate(nombre.img, nombre.num, nombre.name)
     });
 })
-
-let modal = document.getElementById("myModal");
-const btn = document.getElementById("myBtn");
-let span = document.getElementsByClassName("close")[0];
-
-
-infoPokemon.forEach((persona) => {
-    modal.innerHTML += verMas(persona.img, persona.num, persona.name, persona.type)
-
-function verMas(img, name, num, type){
-   
-
-    const detallepokemonHTML = `
-  <div class="cont.card" id=${num}>
-  <div class="card" id="card">
-  <img class="img" src=${img} </img><div> 
-  <p><class= "namepokemon">${name} </p>
-  <p><class= "numpokemon">${num}</p><br>
-  <p><class""pokemontipo">${type}</p><br>
-  </div>
-  </div>
-  </div>
-  `;
-
-return detallepokemonHTML;
-}
-});
-
-cardinfo.click = function() {
-    modal.style.display = "block";
-  }
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-
-
 
