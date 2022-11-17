@@ -17,9 +17,8 @@ export const searchFilter =  (pokemon,nombrePokemon)=> {
     }
     if (a.name> b.name) {
       return 1;
-    }
-   return 0;
-  })
+  }
+})
 };
 
 export const ordenZAPokemon=(array)=>{
@@ -32,7 +31,6 @@ export const ordenZAPokemon=(array)=>{
     if (a.name > b.name) {
       return -1;
     }
-   return 0;
   })
 }
   

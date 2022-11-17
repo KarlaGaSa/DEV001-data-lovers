@@ -1,12 +1,11 @@
 
-import { searchFilter, ordenAZPokemon, ordenZAPokemon } from '../src/data.js';
-
+import { searchFilter, ordenAZPokemon, ordenZAPokemon, filtroPorTipo } from '../src/data.js';
 
 describe('searchFilter', () => {
   it('is a function', () => {
     expect(typeof searchFilter).toBe('function');
   });
-
+  
   it("Debería regresar el array venasaur", () => {
     const pruebaArray = [{
       "num": "001",
@@ -30,30 +29,28 @@ describe('searchFilter', () => {
     ]
     expect(searchFilter(pruebaArray, "venusaur")).toEqual(resultado)
   });
-  
+
   it('Deberia retornar un arreglos de los pokemon que inician con "ven"', () => {
     const pruebaArray = [{
-    "num": "001",
-    "name": "bulbasaur"
-  },
-  {
-    "num": "002",
-    "name": "ivysaur"
-  },
-  {
-    "num": "003",
-    "name": "venusaur"
-  }
-  ]
-  const resultado = [
+      "num": "001",
+      "name": "bulbasaur"
+    },
+    {
+      "num": "002",
+      "name": "ivysaur"
+    },
     {
       "num": "003",
       "name": "venusaur"
-    }]
-    expect (searchFilter(pruebaArray, 'ven')).toEqual(resultado);
+    }
+    ]
+    const resultado = [
+      {
+        "num": "003",
+        "name": "venusaur"
+      }]
+    expect(searchFilter(pruebaArray, 'ven')).toEqual(resultado);
   });
-  
-
 });
 
 //Test de ordenar A-Z
@@ -135,3 +132,38 @@ describe("ordenZAPokemon", () => {
     expect(ordenZAPokemon(pruebaOrdenZA)).toEqual(resultado)
   });
 });
+
+//Test filtro por tipo
+describe("filtroPorTipo", () => {
+  it('is a function', () => {
+    expect(typeof filtroPorTipo).toBe('function');
+  });
+
+  it("Debería regresar solo el/los array con el 'Type' solicitado", () => {
+    const pruebaArray = [
+      {
+        "num": "026",
+        "name": "raichu", 
+        "type": ["electric"]
+      },
+      {
+        "num": "030",
+        "name": "nidorina",
+        "type": ["poison"]
+      },
+      {
+        "num": "053",
+        "name": "persian",
+        "type": ["normal"]
+      }
+    ]
+    const resultado = [
+      {
+        "num": "026",
+        "name": "raichu", 
+        "type": ["electric"]
+      }
+    ]
+    expect(filtroPorTipo(pruebaArray, "electric")).toEqual(resultado)
+  })
+})
