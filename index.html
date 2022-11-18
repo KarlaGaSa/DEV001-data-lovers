@@ -5,29 +5,82 @@
   <meta charset="utf-8">
   <title>Pokemon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <header>
   <div class="encabezadoPadre">
-    <img src= url(imagenes/pokemon-go.jpg) class="cabecera" id="logo">
-    <img src="imagenes/pikachu.png" class="cabecera" id="pikachu">
-    <!-- <button class="cabecera" id="filtrar">hola</button>-->
+    <img src="imagenes/pokemon-go.jpg" id="logo">
+    <img src="imagenes/pikachu.png" id="pikachu">
+
+    <div class="botones" id="botones">
+      <input type="button" class="inicio" id="home" value="Home">
+
+      <div>
+        <label for="filtroTipo" id="tipo"> Type </label>
+        <select id="filtroTipo">
+          <option value="all">All</option>
+          <option value="bug">Bug</option>
+          <option value="dark">Dark</option>
+          <option value="dragon"> Dragon</option>
+          <option value="electric">Electric</option>
+          <option value="fairy">Fairy</option>
+          <option value="fighting">Fighting</option>
+          <option value="fire">Fire</option>
+          <option value="flying">Flying</option>
+          <option value="ghost">Ghost</option>
+          <option value="grass">Grass</option>
+          <option value="ground">Ground</option>
+          <option value="ice">Ice</option>
+          <option value="normal">Normal</option>
+          <option value="poison">Poison</option>
+          <option value="psychic">Psychic</option>
+          <option value="rock">Rock</option>
+          <option value="steel">Steel</option>
+          <option value="water"> Water</option>
+        </select>
+      </div>
+
+      <div class="ordenado">
+        <button class="ordenbtn">Ordenar</button>
+        <div class="orden-content">
+          <a id="A-Z">Ordenar de la A - Z</a>
+          <a id="Z-A">Ordenar de la Z - A</a>
+        </div>
+      </div>
+    </div>
+      <div class="slogan"> <img src="imagenes/atrapalos2.png" id="sloganid">
+      </div>
+
   </div>
-  <div> <img src="imagenes/atrapalos2.png" class="slogan" id="sloganid">
-  </div>
+  <article class="searcher">
+    <input type="search" id="search" placeholder="Search by name" autocomplete="off" spellcheck="false" />
+  </article>
+
 </header>
 
 <body>
 
   <main>
-    <div class="cont-card" id="cont-card"></div>
+    <div id="contenedorPadre">
+      <div class="cont-card" id="cont-card"></div>
+      <button class="btn-scrolltop" id="btn_scrolltop">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </div>
+
   </main>
 
-  <footer>Aquí van nuestros nombres Silvana&Karla</footer>
+  <footer>
+    <p>Proyecto desarrollado por Silvana González y Karla García<br>
+      Laboratoria DEV-001</p>
+  </footer>
 
   <div id="root"></div>
+
   <script src="main.js" type="module"></script>
 
 </body>
