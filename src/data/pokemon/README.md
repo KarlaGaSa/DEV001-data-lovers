@@ -29,7 +29,7 @@ Yo como nueva aspirante a maestra pokémon quiero primero conocer la imagen, nom
 Prototipo historia de usuario Nº1
  ![marcado2](/imagenes/Prototipo HU1.png)
 
-### Historia de usuario Nº 2
+# Historia de usuario Nº 2
 
 Como usuario de la pagina, quiero poder buscar los pokemons por el nombre.
 ![maracdo3](/imagenes/WhatsApp image.jpeg)
