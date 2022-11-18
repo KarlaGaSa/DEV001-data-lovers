@@ -20,14 +20,27 @@ Todas las funcionalidades de la página estan dirigidas e inspiradas en las hist
 
 "Pokemon" posee un diseño sencillo, amable y responsivo que facilita la navegabilidad  para nuestros usuarios.
 Tambien es altamente descriptiva con cada pokemon, brindando información detallada.
+![marcado1](/imagenes/PrototipodeAlta.png)
 
 ## Historias de usuario
 #### Historia de usuario N1
 Yo como nueva aspirante a maestra pokémon quiero primero conocer la imagen, nombre y número de los pokemones en una solo pantalla.
 
 Prototipo historia de usuario Nº1
-<img src= "imagenes/PrototipoHU1.png">
+ ![marcado2](/imagenes/Prototipo HU1.png)
 
+# Historia de usuario Nº 2
+
+Como usuario de la pagina, quiero poder buscar los pokemons por el nombre.
+![maracdo3](/imagenes/WhatsApp image.jpeg)
+
+### Historia de usuario Nº 3
+Para facilitar mi busqueda y conocimiento de los pokemons me gustaria poder visualizarlos en orden alfabetico ascedente y descendente.
+
+### Historia de usuario Nº 4
+
+Como usuaria de la pagina me gustaria poder filtrar los Pokemons por tipo
+![marcado4](/imagenes/WhatsApp Imag AM.jpeg)
 ## Tecnologìas utilizadas
 - Javascript
 - CSS
